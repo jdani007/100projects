@@ -1,12 +1,15 @@
-output = ""
-result = 1
+# character = input("character = ")
+# encoded = ord(character)
 
-num = int(input("number = "))
-for i in reversed(range(1, num + 1)):
-    result *= i
-    if i == 1:
-        output = output + str(i)
-    else:
-        output = output + str(i) + "*"
+# print(encoded)
+# print(chr(encoded))
 
-print(f"Factorial = {output} = {result}")
+l = []
+word = "wonder pets wonder pet."
+for c in word:
+    print(ord(c), end="")
+    l.append(ord(c))
+
+print()
+for i in l:
+    print(chr(i), end="")
